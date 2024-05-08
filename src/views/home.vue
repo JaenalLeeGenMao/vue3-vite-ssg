@@ -9,7 +9,7 @@ const getSiteMetadata = async () =>
   })
 
 const metadata = await getSiteMetadata()
-console.log('ini', metadata)
+
 useHead({
   title: metadata?.title ?? 'unknown',
   meta: [
