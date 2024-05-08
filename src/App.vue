@@ -18,7 +18,10 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <Suspense>
+    <template #fallback><div>Loading...</div></template>
+    <RouterView />
+  </Suspense>
 </template>
 
 <style scoped>
